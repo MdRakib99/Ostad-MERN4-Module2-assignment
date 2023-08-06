@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ajax</title>
+  </head>
+  <body>
+    <script>
+      let url = "https://jsonplaceholder.typicode.com/posts";
+      fetchApi();
+      async function fetchApi() {
+        let res = await fetch(url);
+        let jsonData = await res.json();
+        console.log(JSON.stringify(jsonData));
+      }
+    </script>
+  </body>
+</html>

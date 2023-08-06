@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Click Counter</title>
+  </head>
+
+  <body>
+    <p id="count">Count :0</p>
+    <button onclick="handleCount()">increment</button>
+
+    <script>
+      let countValue = 0;
+      function handleCount() {
+        let count = document.getElementById("count");
+        countValue++;
+        count.innerHTML = "Count :" + countValue;
+      }
+    </script>
+  </body>
+</html>

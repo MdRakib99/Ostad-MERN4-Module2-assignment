@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Manipulation</title>
+  </head>
+
+  <body>
+    <div id="myDiv">This is my initial div Content</div>
+    <button onclick="handleClick()">Click</button>
+
+    <script>
+      function handleClick() {
+        let myContent = document.getElementById("myDiv");
+        myContent.innerHTML = "The content has been changed";
+      }
+    </script>
+  </body>
+</html>
